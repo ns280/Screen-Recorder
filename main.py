@@ -4,8 +4,8 @@ import pyautogui
 import time
 SCREEN_SIZE = (2560,1600)
 fourcc = cv2.VideoWriter_fourcc(*"XVID")
-out = cv2.VideoWriter("output.mp4", fourcc, 1.0, (SCREEN_SIZE))
-fps = 360
+out = cv2.VideoWriter("output.mp4", fourcc, 5.0, (SCREEN_SIZE))
+fps = 480
 prev = 0
 while True:
     time_elapsed = time.time() - prev
